@@ -1,0 +1,113 @@
+.about-style-two {
+  position: relative;
+  padding: 40px 0px;
+}
+.auto-container {
+  position: static;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+/* .image_block_3 .image-box .pattern .pattern-1 {
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  width: 490px;
+  height: 506px;
+  background-image: url(https://f.hubspotusercontent20.net/hubfs/20168525/shape-49.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.image_block_3 .image-box .pattern .pattern-2 {
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  width: 124px;
+  height: 144px;
+  background-image: url(https://f.hubspotusercontent20.net/hubfs/20168525/shape-50.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.image_block_3 .image-box .pattern .pattern-3 {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.5;
+  background: #38c8ba;
+}
+.about-style-two .image_block_3 .image-box {
+  margin-left: 40px;
+}
+.image_block_3 .image-box {
+  position: relative;
+  padding: 0px 60px 95px 100px;
+}
+.image_block_3 .image-box .image {
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgb(0 24 73 / 40%);
+}
+.image_block_3 .image-box .image-2 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.image_block_3 .image-box .image img {
+  width: 100%;
+  border-radius: 15px;
+}
+.image_block_3 .image-box .image-content {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  background: #fff;
+  max-width: 240px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 32px 20px 32px 90px;
+  box-shadow: 17px 20px 80px rgb(0 24 73 / 30%);
+}
+.image_block_3 .image-box .image-content .icon-box {
+  position: absolute;
+  left: 23px;
+  top: 23px;
+}
+.image_block_3 .image-box .image-content span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #061a3a;
+}
+.image_block_3 .image-box .image-content h4 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 900;
+  color: #fe5948;
+}
+
+.image .image-1,
+.image .image-2 {
+  transform: unset;
+  transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s;
+  will-change: transform;
+}
+.image_block_3 .image-box .image {
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgb(0 24 73 / 40%);
+}
+figure {
+  margin: 0px;
+}
+@media only screen and (max-width: 1200px) {
+  .pattern,
+  .anim-icon {
+    display: none !important;
+  }
+} */

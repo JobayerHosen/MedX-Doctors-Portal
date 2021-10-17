@@ -1,0 +1,24 @@
+.logo img {
+  width: 35px;
+  height: 30px;
+}
+
+.logo h1 {
+  display: inline;
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 900;
+  color: #00224f;
+  margin: 5px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #00224f;
+}
+.nav-item:hover,
+.active {
+  color: #39cabb;
+}
