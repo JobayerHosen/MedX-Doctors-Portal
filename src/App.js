@@ -21,7 +21,7 @@ function App() {
           <Route path="/doctors">
             <Doctors></Doctors>
           </Route>
-          <Route path="/doctor/:id">
+          <Route path="/doctor/:doctorId">
             <Doctor></Doctor>
           </Route>
           <Route path="/about">
