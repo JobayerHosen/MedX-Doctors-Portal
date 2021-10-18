@@ -32,8 +32,8 @@ const Signup = () => {
       <Container className="signup-panel">
         <Row>
           <Col xs={12} md={6}>
-            <h1 className="title text-center">signup</h1>
-            <div className="signup h-100 d-flex flex-column justify-content-center">
+            <h1 className="title text-center">Sign Up</h1>
+            <div className="signup d-flex flex-column justify-content-center h-100 pb-5">
               <Form onSubmit={handleSignupSubmit}>
                 <Form.Group className=" mb-3" controlId="formBasicEmail">
                   <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
@@ -81,13 +81,13 @@ const Signup = () => {
             </div>
           </Col>
           <Col xs={12} md={1}>
-            <div className="d-flex justify-content-center align-items-center my-3 pt-5 h-100">
+            <div className="d-flex justify-content-center align-items-center my-3 pt-5 pb-3 h-100">
               <p>--OR--</p>
             </div>
           </Col>
           <Col xs={12} md={5}>
-            <h1 className="title text-center fw-bold">Signup With</h1>
-            <div className="d-flex justify-content-around align-items-center h-100 ">
+            <h1 className="title text-center fw-bold">Sign Up With</h1>
+            <div className="d-flex justify-content-around align-items-center h-100 pb-5">
               <button onClick={signInWithGoogle} className="btn btn-danger">
                 <i className="bi bi-google fs-2"></i> <br />
                 Google
