@@ -4,6 +4,7 @@ import Doctors from "./components/pages/Doctors/Doctors";
 import Doctor from "./components/pages/Doctor/Doctor";
 import Home from "./components/pages/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Home></Home>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
