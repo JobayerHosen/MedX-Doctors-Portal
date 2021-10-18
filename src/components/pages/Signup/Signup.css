@@ -1,0 +1,18 @@
+.signup-heading {
+  height: 400px;
+  background-color: #453f85;
+  text-align: center;
+}
+
+.signup-panel {
+  box-shadow: 0 0 1rem 5px #0005;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-top: -200px;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.signup {
+  padding-right: 1.5rem;
+}

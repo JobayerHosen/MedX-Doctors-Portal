@@ -2,9 +2,12 @@ import React from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo-1.png";
+import useAuth from "../../hooks/useAuth";
 import "./NavBar.css";
 
 const NavBar = () => {
+  const { user, logOut } = useAuth();
+
   return (
     <div>
       <Navbar bg="white" expand="lg" className="py-3">
@@ -35,12 +38,32 @@ const NavBar = () => {
                 FAQs
               </NavLink>
             </Nav>
-            <NavLink to="/login">
-              <Button variant="outline" className="rounded-pill btn-main p-2 px-3">
-                <i className="bi bi-person"></i>
-                &nbsp;Login Now
-              </Button>
-            </NavLink>
+
+            {/* SHOW LOGIN OR LOGOUT BUTTON BASE ON LOGIN STATUS */}
+            {!user ? (
+              <NavLink to="/login">
+                <Button variant="outline" className="rounded-pill btn-main p-2 px-3">
+                  <i className="bi bi-person"></i>
+                  &nbsp;Login Now
+                </Button>
+              </NavLink>
+            ) : (
+              <div className="user d-flex">
+                <Button onClick={logOut} variant="outline" className="rounded-pill btn-main p-2 px-3">
+                  Log Out&nbsp;
+                  <i className="bi bi-box-arrow-right"></i>
+                </Button>
+                <div className="user-icon ms-3">
+                  <img
+                    title={user.email}
+                    src={
+                      user.photoURL ? user.photoURL : "https://i.ibb.co/4NM5vPL/Profile-avatar-placeholder-large.png"
+                    }
+                    alt=""
+                  />
+                </div>
+              </div>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>

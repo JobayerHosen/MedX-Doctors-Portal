@@ -6,8 +6,9 @@ import Home from "./components/pages/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/pages/NotFound/NotFound";
-import Login from "./components/Login/Login";
+import Login from "./components/pages/Login/Login";
 import AuthProvider from "./contexts/AuthProvider";
+import Signup from "./components/pages/Signup/Signup";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
               <Login></Login>
             </Route>
             <Route path="/signup">
-              <Home></Home>
+              <Signup></Signup>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

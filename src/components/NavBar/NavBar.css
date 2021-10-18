@@ -22,3 +22,15 @@
 .active {
   color: #39cabb;
 }
+
+.user-icon {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+}

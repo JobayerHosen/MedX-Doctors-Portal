@@ -103,6 +103,7 @@ const useFirebase = () => {
   return {
     user,
     error,
+    setError,
     isLoading,
     signInWithGoogle,
     signInWithGithub,
