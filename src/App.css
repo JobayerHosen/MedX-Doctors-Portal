@@ -10,6 +10,31 @@ p {
   transition: all 500ms ease;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #00224f;
+  margin: 0px;
+  transition: all 500ms ease;
+}
+
 .title {
   font-family: "Jost", sans-serif;
   font-size: 50px;
@@ -22,10 +47,12 @@ p {
   color: #fff;
   background-color: #39cabb;
   border-color: #39cabb;
+  padding: 0.5rem 0.8rem;
+  transition: all 0.4s ease;
 }
 .btn-main:hover {
   color: #fff;
-  background-color: #00224f;
+  background-color: #453f85;
 }
 
 .text-main {

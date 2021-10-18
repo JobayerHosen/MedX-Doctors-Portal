@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Richard Muldoone",
+    "speciality": "Cardiology Specialist",
+    "image": "https://i.ibb.co/vPk8yYt/1.jpg",
+    "bio": "Muldoone obtained his undergraduate degree in Biomedical Engineering at Tulane University prior to attending St George's University School of Medicine.",
+    "degrees": "MBBS, Ph.D",
+    "office": "792 East Race Drive Rome, NY 13440",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Dr. Julia Jhones",
+    "speciality": "Dermatologists",
+    "image": "https://i.ibb.co/CPh2GfL/2.jpg",
+    "bio": "Julia specializes in treating skin, hair, nail, and mucous membrane. He also address cosmetic issues, helping to revitalize the appearance of the skin and nails.",
+    "degrees": "MBBS, DPT",
+    "office": "489 Hawthorne Street New York, NY 10024",
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "name": "Maria Andaloro",
+    "speciality": "Pediatrician",
+    "image": "https://i.ibb.co/FD5G1CJ/3.jpg",
+    "bio": "Andaloro graduated from medical school and completed 3 years residency program in pediatrics. She passed rigorous exams by the American Board of Pediatrics.",
+    "degrees": "MBBS",
+    "office": "29 Vale Drive Lockport, NY 14094",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Kiano Barker",
+    "speciality": "Pathologist",
+    "image": "https://i.ibb.co/mcTPmcw/4.jpg",
+    "bio": "Barker help care for patients every day by providing their doctors with the information needed to ensure appropriate care. He also valuable resources.",
+    "degrees": "MBBS, Ph.D",
+    "office": "378 Nicolls Ave.New York, NY 10003",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Dupree Black",
+    "speciality": "Urologist",
+    "image": "https://i.ibb.co/z5pn604/5.jpg",
+    "bio": "Black diagnose and treat diseases of the urinary tract in both men and women. He also diagnose and treat anything involving the reproductive tract in men.",
+    "degrees": "MBBS, MD",
+    "office": "91 Wakehurst Ave. Bronx, NY 10473",
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "name": "Markus skar",
+    "speciality": "Laboratory",
+    "image": "https://i.ibb.co/CJGhMkK/6.jpg",
+    "bio": "Skar play a very important in your health care. People working in the clinical laboratory are responsible for conducting tests that provide crucial information.",
+    "degrees": "MBBS, Ph.d",
+    "office": "9806 Armstrong Ave. Flushing, NY 11355",
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "John Henry",
+    "speciality": "Urologist",
+    "image": "https://i.ibb.co/0sfThCT/7.jpg",
+    "bio": "Henry play a very important role in your health care. People working in the clinical laboratory are responsible for conducting tests that provide crucial information.",
+    "degrees": "MBBS",
+    "office": "47 NE. Circle Dr. New York, NY 10011",
+    "rating": 4.3
+  },
+  {
+    "id": 8,
+    "name": "Michael Brian",
+    "speciality": "Dermatologists",
+    "image": "https://i.ibb.co/C6jK21V/8.jpg",
+    "bio": "Brian specializes in treating skin, hair, nail, and mucous membrane. He also address cosmetic issues, helping to revitalize the appearance of the skin and nails.",
+    "degrees": "MBBS, MD",
+    "office": "489 Hawthorne Street New York, NY 10024",
+    "rating": 4.9
+  }
+]

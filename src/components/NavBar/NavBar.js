@@ -37,7 +37,7 @@ const NavBar = () => {
             </Nav>
             <NavLink to="/login">
               <Button variant="outline" className="rounded-pill btn-main p-2 px-3">
-                <i class="bi bi-person"></i>
+                <i className="bi bi-person"></i>
                 &nbsp;Login Now
               </Button>
             </NavLink>
