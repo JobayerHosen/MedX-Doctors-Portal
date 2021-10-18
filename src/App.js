@@ -5,6 +5,8 @@ import Doctor from "./components/pages/Doctor/Doctor";
 import Home from "./components/pages/Home/Home";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+import NotFound from "./components/pages/NotFound/NotFound";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -27,17 +29,14 @@ function App() {
           <Route path="/about">
             <Home></Home>
           </Route>
-          <Route path="/faq">
-            <Home></Home>
-          </Route>
           <Route path="/login">
-            <Home></Home>
+            <Login></Login>
           </Route>
           <Route path="/signup">
             <Home></Home>
           </Route>
           <Route path="*">
-            <Home></Home>
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
