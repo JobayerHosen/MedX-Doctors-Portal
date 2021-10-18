@@ -13,7 +13,7 @@ const DoctorCard = ({ doctor }) => {
           <div className="pattern-2"></div>
         </div>
         <figure className="image-box">
-          <img src={image} alt="doctor-photo" loading="lazy" />
+          <img src={image} alt="doctor" loading="lazy" />
         </figure>
         <div className="content-box">
           <ul className="name-box">

@@ -1,4 +1,4 @@
-import { Button, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import useDoctorList from "../../hooks/useDoctorList";
 import DoctorCard from "../DoctorCard/DoctorCard";
 

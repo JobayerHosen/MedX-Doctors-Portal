@@ -6,11 +6,10 @@ import useDoctorList from "../../../hooks/useDoctorList";
 import "./Doctor.css";
 
 const Doctor = () => {
-  const [doctors, setDoctors] = useDoctorList();
+  const [doctors] = useDoctorList();
   const { doctorId } = useParams();
 
   const doctor = doctorId ? doctors.find((dr) => dr.id === parseInt(doctorId)) : undefined;
-  console.log(doctor);
 
   if (!doctor) {
     return <div className="alert">No result found</div>;

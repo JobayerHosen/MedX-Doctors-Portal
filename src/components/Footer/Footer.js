@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo-1-light.png";
-import { Col, Container, Nav, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
