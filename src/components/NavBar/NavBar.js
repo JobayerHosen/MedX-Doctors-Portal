@@ -53,14 +53,18 @@ const NavBar = () => {
                   Log Out&nbsp;
                   <i className="bi bi-box-arrow-right"></i>
                 </Button>
-                <div className="user-icon ms-3">
+                <div className=" user-icon ms-3">
                   <img
                     title={user.email}
                     src={
                       user.photoURL ? user.photoURL : "https://i.ibb.co/4NM5vPL/Profile-avatar-placeholder-large.png"
                     }
-                    alt=""
+                    alt="user avatar"
                   />
+                  <div className="user-info">
+                    <h3 className="mb-3">{user.displayName ? user.displayName : "Anonimous"}</h3>
+                    <h5 className="mb-3">{user.email}</h5>
+                  </div>
                 </div>
               </div>
             )}
