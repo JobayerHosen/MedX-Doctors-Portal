@@ -36,6 +36,9 @@ const NavBar = () => {
               <NavLink activeClassName="active" className="nav-item" to="/about">
                 About us
               </NavLink>
+              <NavLink activeClassName="active" className="nav-item" to="/contact">
+                Live Chat
+              </NavLink>
 
               <NavLink activeClassName="active" className="nav-item" to="/faq">
                 FAQs
