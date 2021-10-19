@@ -3,6 +3,7 @@ import { Alert, Card, Col, Container, Row, Button } from "react-bootstrap";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import useDoctorList from "../../../hooks/useDoctorList";
+import Appoinment from "../../Appointment/Appoinment";
 import "./Doctor.css";
 
 const Doctor = () => {
@@ -59,17 +60,11 @@ const Doctor = () => {
                 <span>Office: </span>
                 {doctor.office}
               </Alert>
-
-              <NavLink to="/home" className="ms-auto">
-                <Button variant="outline" className="rounded-pill btn-main mt-4">
-                  Make Appointment &nbsp;
-                  <i className="bi bi-calendar2-day"></i>
-                </Button>
-              </NavLink>
             </div>
           </Col>
         </Row>
       </Container>
+      <Appoinment></Appoinment>
     </div>
   );
 };

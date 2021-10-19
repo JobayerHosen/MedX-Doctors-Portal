@@ -9,8 +9,8 @@ const About = () => {
         <Row className="h-100 p-5">
           <Col xs={12} md={7}>
             <h1 className="text-white text-start mb-3">
-              <i className="bi bi-activity"></i> &nbsp;Medcity Has Touched The Lives Of Patients & Providing Care for
-              The Sickest In Our Community.
+              <i className="bi bi-activity"></i> &nbsp;MedX Has Touched The Lives Of Patients & Providing Care for The
+              Sickest In Our Community.
             </h1>
           </Col>
 
@@ -21,9 +21,9 @@ const About = () => {
           <Col xs={12} md={5}></Col>
           <Col xs={12} md={7}>
             <h5 className="text-white text-start mb-3">
-              Medcity has been present in Europe since 1990, offering innovative solutions, specializing in medical
-              services for treatment of medical infrastructure. With over 100 professionals actively participates in
-              numerous initiatives aimed at creating sustainable change for patients!
+              MedX has been present in US since 1990, offering innovative solutions, specializing in medical services
+              for treatment of medical infrastructure. With over 100 professionals actively participates in numerous
+              initiatives aimed at creating sustainable change for patients!
             </h5>
           </Col>
         </Row>
@@ -69,13 +69,13 @@ const About = () => {
           </Col>
           <Col xs={12} sm={6} md={4} lg={3}>
             <div className="service-grid bg-white text-main mx-auto my-3 p-3 text-center">
-              <i class="bi bi-cash-coin"></i>
+              <i className="bi bi-cash-coin"></i>
               <h5> Affordable Prices For All Patients </h5>
             </div>
           </Col>
           <Col xs={12} sm={6} md={4} lg={3}>
             <div className="service-grid bg-white text-main mx-auto my-3 p-3 text-center">
-              <i class="bi bi-heart"></i>
+              <i className="bi bi-heart"></i>
               <h5>Quality Care For Every Patient </h5>
             </div>
           </Col>

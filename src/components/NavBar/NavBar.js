@@ -30,6 +30,9 @@ const NavBar = () => {
                 Doctors
               </NavLink>
 
+              <NavLink activeClassName="active" className="nav-item" to="/appointment">
+                Appointment
+              </NavLink>
               <NavLink activeClassName="active" className="nav-item" to="/about">
                 About us
               </NavLink>
