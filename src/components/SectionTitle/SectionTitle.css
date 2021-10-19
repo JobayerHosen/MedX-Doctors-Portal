@@ -9,8 +9,8 @@
 
 .section-title h1 {
   font-family: "Jost", sans-serif;
-  font-size: 50px;
-  line-height: 55px;
+  font-size: 3.1rem;
+  line-height: 3.2rem;
   font-weight: 900;
   margin-bottom: 1rem;
   color: #00224f;
@@ -18,8 +18,8 @@
 
 .section-title h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #39cabb;
@@ -31,12 +31,12 @@
 
 @media screen and (max-width: 768px) {
   .section-title h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
   }
   .section-title h4 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #39cabb;

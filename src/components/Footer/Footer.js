@@ -10,10 +10,10 @@ const Footer = () => {
       <Container>
         <Row>
           <Col xs={12} sm={6} md={4}>
-            <div className="d-flex flex-column align-items-start">
+            <div className="d-flex flex-column mt-3">
               <NavLink
                 to="/home"
-                className="logo text-decoration-none d-flex justify-content-center align-items-center mb-4"
+                className="logo text-start text-decoration-none d-flex justify-content-center align-items-center me-auto mb-4"
               >
                 <img src={logo} alt="logo" />
                 <h1 className="text-light">MedX</h1>
@@ -32,7 +32,7 @@ const Footer = () => {
           </Col>
 
           <Col xs={12} sm={6} md={2}>
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column mt-3">
               <h6 className="text-white mb-3">Departments</h6>
               <ul>
                 <li className="mb-2">
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col xs={12} sm={6} md={2}>
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column mt-3">
               <h6 className="text-white mb-3">Links</h6>
               <ul>
                 <li className="mb-2">
@@ -102,7 +102,7 @@ const Footer = () => {
           </Col>
 
           <Col xs={12} sm={6} md={4}>
-            <div className="d-flex flex-column bg-white text-main rounded p-4 border-start border-5 border-primary">
+            <div className="d-flex flex-column mt-3 bg-white text-main rounded p-4 border-start border-5 border-primary">
               <h5 className="mb-3 fw-bold">Quick Contacts</h5>
               <p className="mb-3">
                 If you have any questions or need help, feel free to contact us for medical assistance.
