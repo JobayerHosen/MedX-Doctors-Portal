@@ -9,6 +9,7 @@ import NotFound from "./components/pages/NotFound/NotFound";
 import Login from "./components/pages/Login/Login";
 import AuthProvider from "./contexts/AuthProvider";
 import Signup from "./components/pages/Signup/Signup";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
             <Route path="/doctors">
               <Doctors></Doctors>
             </Route>
-            <Route path="/doctor/:doctorId">
+            <PrivateRoute path="/doctor/:doctorId">
               <Doctor></Doctor>
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <Home></Home>
             </Route>
