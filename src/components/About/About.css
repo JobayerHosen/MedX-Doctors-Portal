@@ -1,0 +1,20 @@
+.about-bg {
+  overflow: hidden;
+  background-color: #39cabb;
+  text-align: center;
+  padding: 1rem 1rem 5rem;
+}
+
+.service-grid {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+.service-grid i {
+  font-size: 4rem;
+  opacity: 0.7;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import About from "../../About/About";
 import Banner from "../../Banner/Banner";
 import DoctorsCards from "../../DoctorsCards/DoctorsCards";
 import Faq from "../../Faq/Faq";
@@ -31,6 +32,7 @@ const Home = () => {
           </Button>
         </NavLink>
       </Container>
+      <About></About>
       <Faq></Faq>
     </div>
   );
