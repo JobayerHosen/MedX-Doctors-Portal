@@ -3,13 +3,14 @@ import { Col, Container, Form, Row, Button, FloatingLabel } from "react-bootstra
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Error from "../../Error/Error";
+import Loading from "../../Loading/Loading";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { signInWithGoogle, signInWithGithub, logInWithEmailandPassword, error } = useAuth();
+  const { signInWithGoogle, signInWithGithub, logInWithEmailandPassword, error, isLoading } = useAuth();
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +18,9 @@ const Login = () => {
     setEmail("");
     setPassword("");
   };
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
 
   return (
     <div>

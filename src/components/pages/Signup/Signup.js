@@ -3,6 +3,7 @@ import { Col, Container, Form, Row, Button, FloatingLabel } from "react-bootstra
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Error from "../../Error/Error";
+import Loading from "../../Loading/Loading";
 import "./Signup.css";
 
 const Signup = () => {
@@ -10,7 +11,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const { signInWithGoogle, signInWithGithub, createAccountWithEmailPassword, error, setError } = useAuth();
+  const { signInWithGoogle, signInWithGithub, createAccountWithEmailPassword, error, setError, isLoading } = useAuth();
 
   const handleSignupSubmit = (e) => {
     e.preventDefault();
@@ -23,6 +24,10 @@ const Signup = () => {
       setError("Password Does Not Match");
     }
   };
+
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
 
   return (
     <div>
