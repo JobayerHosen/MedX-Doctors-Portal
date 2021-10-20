@@ -1,9 +1,8 @@
 import React from "react";
-import { Alert, Card, Col, Container, Row, Button } from "react-bootstrap";
+import { Alert, Card, Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router";
-import { NavLink } from "react-router-dom";
 import useDoctorList from "../../../hooks/useDoctorList";
-import Appoinment from "../../Appointment/Appoinment";
+import Appoinment from "../Appointment/Appoinment";
 import "./Doctor.css";
 
 const Doctor = () => {
@@ -64,6 +63,7 @@ const Doctor = () => {
           </Col>
         </Row>
       </Container>
+
       <Appoinment></Appoinment>
     </div>
   );

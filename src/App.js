@@ -12,8 +12,8 @@ import Signup from "./components/pages/Signup/Signup";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Faq from "./components/Faq/Faq";
 import About from "./components/About/About";
-import Appoinment from "./components/Appointment/Appoinment";
-import Contact from "./components/Contact/Contact";
+import Appoinment from "./components/pages/Appointment/Appoinment";
+import Contact from "./components/pages/Contact/Contact";
 
 function App() {
   return (

@@ -31,11 +31,13 @@ const Signup = () => {
 
   return (
     <div>
-      <Container fluid className="signup-heading pt-5">
+      <Container fluid className="signup-heading">
         {error && <Error></Error>}
       </Container>
+
       <Container className="signup-panel">
         <Row>
+          {/* SIGN UP FORM  */}
           <Col xs={12} md={6}>
             <h1 className="title text-center">Sign Up</h1>
             <div className="signup d-flex flex-column justify-content-center h-100 pb-5">
@@ -85,6 +87,8 @@ const Signup = () => {
               </Form>
             </div>
           </Col>
+
+          {/* THIRD PARTY SIGN UP  */}
           <Col xs={12} md={1}>
             <div className="d-flex justify-content-center align-items-center my-3 pt-5 pb-3 h-100">
               <p>--OR--</p>
@@ -108,6 +112,7 @@ const Signup = () => {
             </div>
           </Col>
         </Row>
+
         <h6 className="my-5 pt-5 text-center">
           Already have account? <NavLink to="/login">Log In</NavLink> instead.
         </h6>

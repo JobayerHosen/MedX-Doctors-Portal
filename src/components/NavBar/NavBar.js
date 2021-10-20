@@ -12,10 +12,13 @@ const NavBar = () => {
     <div>
       <Navbar bg="white" expand="lg" className="py-3">
         <Container>
+          {/* LOGO  */}
           <NavLink to="/home" className="logo text-decoration-none d-flex justify-content-center align-items-center">
             <img src={logo} alt="logo" />
             <h1>MedX</h1>
           </NavLink>
+
+          {/* NAVIGATION MENU  */}
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -29,17 +32,15 @@ const NavBar = () => {
               <NavLink activeClassName="active" className="nav-item" to="/doctors">
                 Doctors
               </NavLink>
-
               <NavLink activeClassName="active" className="nav-item" to="/appointment">
                 Appointment
-              </NavLink>
-              <NavLink activeClassName="active" className="nav-item" to="/about">
-                About us
               </NavLink>
               <NavLink activeClassName="active" className="nav-item" to="/contact">
                 Live Chat
               </NavLink>
-
+              <NavLink activeClassName="active" className="nav-item" to="/about">
+                About us
+              </NavLink>
               <NavLink activeClassName="active" className="nav-item" to="/faq">
                 FAQs
               </NavLink>
@@ -59,6 +60,8 @@ const NavBar = () => {
                   Log Out&nbsp;
                   <i className="bi bi-box-arrow-right"></i>
                 </Button>
+
+                {/* AVATAR  */}
                 <div className=" user-icon ms-3">
                   <img
                     title={user.email}
@@ -68,7 +71,7 @@ const NavBar = () => {
                     alt="user avatar"
                   />
                   <div className="user-info">
-                    <h3 className="mb-3">{user.displayName ? user.displayName : "Anonimous"}</h3>
+                    <h3 className="mb-3">{user.displayName ? user.displayName : "Anonymous"}</h3>
                     <h5 className="mb-3">{user.email}</h5>
                   </div>
                 </div>

@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Button, Accordion } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Container, Accordion } from "react-bootstrap";
 import bannerBg from "../../assets/faq-1.png";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import "./Faq.css";

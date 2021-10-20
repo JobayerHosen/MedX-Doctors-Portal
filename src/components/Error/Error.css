@@ -1,6 +1,40 @@
 .error {
   opacity: 0;
-  transition: all 1s ease;
+}
+.error .alert {
+  margin: 10px auto 3px;
+  max-width: 400px;
+  border-bottom: 5px solid #bd5959;
+  border-image: linear-gradient(180deg, #bd5959, #8459bd00);
+  border-image-slice: 0 0 1 0;
+  animation: error-fade 8s linear 1;
+}
+
+@keyframes error-fade {
+  0% {
+    border-image: linear-gradient(0deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
+  20% {
+    border-image: linear-gradient(36deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
+  40% {
+    border-image: linear-gradient(72deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
+  60% {
+    border-image: linear-gradient(108deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
+  80% {
+    border-image: linear-gradient(144deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
+  100% {
+    border-image: linear-gradient(180deg, #bd5959, #8459bd00);
+    border-image-slice: 0 0 1 0;
+  }
 }
 .error.active {
   opacity: 1;

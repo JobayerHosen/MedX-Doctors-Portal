@@ -15,6 +15,7 @@ const Home = () => {
   if (isLoading) {
     return <Loading></Loading>;
   }
+
   return (
     <div>
       <Banner></Banner>
@@ -32,7 +33,9 @@ const Home = () => {
           </Button>
         </NavLink>
       </Container>
+
       <About></About>
+
       <Faq></Faq>
     </div>
   );

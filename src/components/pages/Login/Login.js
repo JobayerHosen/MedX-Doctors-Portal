@@ -18,6 +18,7 @@ const Login = () => {
     setEmail("");
     setPassword("");
   };
+
   if (isLoading) {
     return <Loading></Loading>;
   }
@@ -27,8 +28,10 @@ const Login = () => {
       <Container fluid className="login-heading">
         {error && <Error></Error>}
       </Container>
+
       <Container className="login-panel">
         <Row>
+          {/* LOGIN FORM  */}
           <Col xs={12} md={6}>
             <h1 className="title text-center">Login</h1>
             <div className="login d-flex flex-column justify-content-center h-100  pb-5">
@@ -65,6 +68,8 @@ const Login = () => {
               </Form>
             </div>
           </Col>
+
+          {/* THIRD PARTY LOGIN */}
           <Col xs={12} md={1}>
             <div className="d-flex justify-content-center align-items-center my-3 pt-5 pb-3 h-100">
               <p>--OR--</p>
@@ -88,6 +93,7 @@ const Login = () => {
             </div>
           </Col>
         </Row>
+
         <h6 className="my-5 pt-5 text-center">
           No Account yet? <NavLink to="/signup">Sign Up</NavLink> instead.
         </h6>

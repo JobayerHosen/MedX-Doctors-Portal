@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Alert } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
+import "./Error.css";
 
 const Error = () => {
   const { error, setError } = useAuth();
@@ -13,9 +14,7 @@ const Error = () => {
   }, [error]);
   return (
     <div className={`error ${error && "active"}`}>
-      <Alert style={{ maxWidth: "300px", margin: "10px auto" }} variant="danger">
-        {error}
-      </Alert>
+      <Alert variant="danger">{error}</Alert>
     </div>
   );
 };
