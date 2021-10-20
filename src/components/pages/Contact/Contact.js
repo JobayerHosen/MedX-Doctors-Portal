@@ -38,7 +38,10 @@ const Contact = () => {
                 aria-label="Chat"
               />
               <Button variant="outline" type="submit" className="rounded-pill p-0 ms-2">
-                <i style={{ fontSize: "3rem" }} className=" text-primary bi bi-arrow-right-circle-fill"></i>
+                <i
+                  style={{ fontSize: "3rem", lineHeight: "3rem" }}
+                  className=" text-primary bi bi-arrow-right-circle-fill"
+                ></i>
               </Button>
             </InputGroup>
           </Form>

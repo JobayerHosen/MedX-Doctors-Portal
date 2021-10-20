@@ -1,23 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Form, Row, Button, FloatingLabel } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Error from "../../Error/Error";
 import Loading from "../../Loading/Loading";
 import "./Login.css";
 
 const Login = () => {
+  const { user, signInWithGoogle, signInWithGithub, logInWithEmailandPassword, error, isLoading } = useAuth();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
+  const location = useLocation();
 
-  const { signInWithGoogle, signInWithGithub, logInWithEmailandPassword, error, isLoading } = useAuth();
+  const refferer = location?.state?.from || { pathname: "/" };
 
+  console.log(refferer);
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     logInWithEmailandPassword(email, password);
     setEmail("");
     setPassword("");
   };
+
+  useEffect(() => {
+    if (user) {
+      history.replace(refferer);
+    }
+  }, [user]);
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -95,7 +106,7 @@ const Login = () => {
         </Row>
 
         <h6 className="my-5 pt-5 text-center">
-          No Account yet? <NavLink to="/signup">Sign Up</NavLink> instead.
+          No Account yet? <NavLink to={{ pathname: "/signup", state: { from: refferer } }}>Sign Up</NavLink> instead.
         </h6>
       </Container>
     </div>

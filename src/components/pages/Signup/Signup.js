@@ -1,17 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Form, Row, Button, FloatingLabel } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Error from "../../Error/Error";
 import Loading from "../../Loading/Loading";
 import "./Signup.css";
 
 const Signup = () => {
+  const { user, signInWithGoogle, signInWithGithub, createAccountWithEmailPassword, error, setError, isLoading } =
+    useAuth();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const history = useHistory();
+  const location = useLocation();
 
-  const { signInWithGoogle, signInWithGithub, createAccountWithEmailPassword, error, setError, isLoading } = useAuth();
+  const refferer = location?.state?.from || { pathname: "/" };
+
+  console.log(refferer);
 
   const handleSignupSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +31,12 @@ const Signup = () => {
       setError("Password Does Not Match");
     }
   };
+
+  useEffect(() => {
+    if (user) {
+      history.replace(refferer);
+    }
+  }, [user]);
 
   if (isLoading) {
     return <Loading></Loading>;
@@ -114,7 +127,8 @@ const Signup = () => {
         </Row>
 
         <h6 className="my-5 pt-5 text-center">
-          Already have account? <NavLink to="/login">Log In</NavLink> instead.
+          Already have account? <NavLink to={{ pathname: "/login", state: { from: refferer } }}>Log In</NavLink>{" "}
+          instead.
         </h6>
       </Container>
     </div>
