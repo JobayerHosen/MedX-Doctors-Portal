@@ -4,6 +4,7 @@ import {
   GithubAuthProvider,
   signInWithPopup,
   createUserWithEmailAndPassword,
+  updateProfile,
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
@@ -51,15 +52,33 @@ const useFirebase = () => {
   };
 
   //   EMAIN AND PASSWORD SIGN UP
-  const createAccountWithEmailPassword = (email, password) => {
+  const createAccountWithEmailPassword = (email, password, name) => {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         setUser(userCredential.user);
+        setUserProfile(auth, name);
         setIsLoading(false);
       })
       .catch((err) => {
         setError(err.message);
+        setIsLoading(false);
+      });
+  };
+
+  // SET USER PROFILE
+  const setUserProfile = (auth, name) => {
+    setIsLoading(true);
+    updateProfile(auth.currentUser, {
+      displayName: name,
+    })
+      .then(() => {
+        // Profile updated!
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        // An error occurred
+        console.log(error);
         setIsLoading(false);
       });
   };

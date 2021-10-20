@@ -10,6 +10,7 @@ const Signup = () => {
   const { user, signInWithGoogle, signInWithGithub, createAccountWithEmailPassword, error, setError, isLoading } =
     useAuth();
 
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -23,7 +24,8 @@ const Signup = () => {
   const handleSignupSubmit = (e) => {
     e.preventDefault();
     if (password === confirmPassword) {
-      createAccountWithEmailPassword(email, password);
+      createAccountWithEmailPassword(email, password, name);
+      setName("");
       setEmail("");
       setPassword("");
       setConfirmPassword("");
@@ -55,6 +57,19 @@ const Signup = () => {
             <h1 className="title text-center">Sign Up</h1>
             <div className="signup d-flex flex-column justify-content-center h-100 pb-5">
               <Form onSubmit={handleSignupSubmit}>
+                <Form.Group className=" mb-3" controlId="formBasicName">
+                  <FloatingLabel controlId="floatingName" label="Full Name" className="mb-3">
+                    <Form.Control
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="rounded-pill ps-4"
+                      type="text"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </FloatingLabel>
+                </Form.Group>
+
                 <Form.Group className=" mb-3" controlId="formBasicEmail">
                   <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
                     <Form.Control
